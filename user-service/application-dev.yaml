@@ -2,9 +2,10 @@ spring:
   application:
     name: users-service
   datasource:
-    url: jdbc:postgresql://users-service-db:5433/users-service-db
+    url: jdbc:postgresql://authentication-service-db:5432/authentication-service-db
     username: postgres
     password: postgres
+
 eureka:
   instance:
     prefer-ip-address: true
@@ -13,5 +14,8 @@ eureka:
     fetch-registry: true
     service-url:
       defaultZone: http://localhost:8070/eureka/
+
+
+
 
 
