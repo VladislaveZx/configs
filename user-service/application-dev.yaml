@@ -5,7 +5,7 @@ spring:
     url: jdbc:postgresql://users-service-db:5432/users-service-db
     username: postgres
     password: postgres
-  eureka:
+eureka:
   instance:
     prefer-ip-address: true
   client:
