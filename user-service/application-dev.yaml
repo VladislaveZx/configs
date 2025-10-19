@@ -8,6 +8,15 @@ spring:
     url: jdbc:postgresql://localhost:5433/users-service-db
     username: postgres
     password: postgres
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
+    show-sql: true
 
 eureka:
   instance:
@@ -17,6 +26,7 @@ eureka:
     fetch-registry: true
     service-url:
       defaultZone: http://localhost:8070/eureka/
+
 
 
 
